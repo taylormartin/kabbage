@@ -1,0 +1,8 @@
+- unless tweets.nil?
+  - tweets.each do |tweet|
+    .row
+      .col-sm-12
+        .tweet-box
+          img src="#{tweet['pic']}"
+          .user-text=link_to "@#{tweet['user']}", "https://twitter.com/#{tweet['user']}", target: "_blank"
+          .tweet-text= tweet['text']

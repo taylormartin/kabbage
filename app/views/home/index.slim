@@ -1,8 +1,11 @@
 .row
   .col-sm-12.text-center
-    h1 Welcome to the Search Page!
+    = form_tag("/home", method: "get") do
+      = label_tag("Search for:")
+      = text_field_tag(:query)
+      = submit_tag("Search")
 .row
   .col-sm-6
-    h2 Here we will put the twitter results
+    =render partial: "tweets", locals: {tweets: @tweets}
   .col-sm-6
-    h2 Here we will put the wikipedia results
+    =render partial: "wikipedia"

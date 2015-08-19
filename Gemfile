@@ -13,6 +13,7 @@ gem 'httparty'
 
 group :development, :test do
   gem 'pry-rails'
+  gem 'pry-nav'
   gem 'factory_girl_rails', require: false
   gem 'faker'
   gem 'rspec-rails'
