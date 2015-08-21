@@ -1,6 +1,6 @@
 - unless result.nil?
   .row
     .col-sm-12
-      .title= result["title"]
-      .wiki-link=link_to "link", "https://en.wikipedia.org/?curid=#{result["pageid"].to_s}", target: "_blank"
+      h2= result["title"]
+      .wiki-link=link_to "Wikipedia Article Link", "https://en.wikipedia.org/?curid=#{result["pageid"].to_s}", target: "_blank"
       .content= result["content"]

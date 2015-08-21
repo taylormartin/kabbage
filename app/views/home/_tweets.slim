@@ -3,6 +3,6 @@
     .row
       .col-sm-12
         .tweet-box
-          img src="#{tweet['pic']}"
-          .user-text=link_to "@#{tweet['user']}", "https://twitter.com/#{tweet['user']}", target: "_blank"
+          img.profile-img src="#{tweet['pic']}"
+          span.user-text=link_to "@#{tweet['user']}", "https://twitter.com/#{tweet['user']}", target: "_blank"
           .tweet-text= tweet['text']
