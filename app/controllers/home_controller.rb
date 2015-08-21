@@ -4,8 +4,9 @@ class HomeController < ApplicationController
 
   def index
     query = params["query"]
-    if query != nil
+    unless query.nil? || query == "" 
       @tweets = Twitter.basic_search(query)
+      @wikipedia = Wikipedia.basic_search(query)
     end
   end
 

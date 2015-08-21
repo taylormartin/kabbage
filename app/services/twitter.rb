@@ -4,7 +4,6 @@ require 'base64'
 class Twitter
   include HTTParty
   base_uri 'https://api.twitter.com'
-  debug_output $stderr
 
   class << self
 
