@@ -1,4 +1,4 @@
-The app can be found live [here.](http://www.kabbagechallenge.herokuapp.com)
+The app can be found live [here.](http://kabbagechallenge.herokuapp.com)
 
 #### Using the App
 
