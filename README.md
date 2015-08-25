@@ -1,4 +1,4 @@
-The app can be found live [here.](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x)
+The app can be found live [here.](kabbagechallenge.herokuapp.com)
 
 #### Using the App
 
