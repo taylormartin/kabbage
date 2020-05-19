@@ -2,6 +2,7 @@ class HomeController < ApplicationController
   
   before_action :authenticate_user!, only: :index
 
+  # comment on this controller method
   def index
     query = params["query"]
     unless query.nil? || query == "" 
